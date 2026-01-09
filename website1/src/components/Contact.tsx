@@ -5,35 +5,36 @@ const Contact = () => {
         <div className="text-center max-w-4xl mx-auto">
           <span className="text-cyan-300 font-semibold text-sm uppercase tracking-wider">Contact Us</span>
           <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-6 text-white">
-            Ready for a Sparkling Clean Car?
+            Ready to Start Gaming?
           </h2>
           <p className="text-blue-100 text-lg mb-12">
-            Give us a call right now! We're here to make your car shine!
+            Join thousands of players already enjoying the best gaming experience. Start playing now!
           </p>
 
           {/* Main Call Button */}
           <div className="bg-white rounded-2xl shadow-2xl p-12">
             <div className="text-center">
-              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">Call Us Now!</h3>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">Start Playing Now!</h3>
               <p className="text-gray-600 text-lg mb-8">
-                Get your car sparkling clean today. No waiting, no forms - just call!
+                Get instant access to hundreds of games. No waiting, no downloads - just pure gaming fun!
               </p>
               <a
-                href="tel:1111111111"
-                className="inline-flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 px-12 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl text-2xl"
+                href="#"
+                className="inline-flex items-center justify-center gap-3 bg-purple-600 hover:bg-purple-700 text-white font-bold py-5 px-12 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl text-2xl"
               >
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                111-111-1111
+                Play Now
               </a>
               <p className="text-gray-500 mt-6">
-                Available 7 days a week • Mon-Sat: 7am-8pm • Sun: 8am-6pm
+                Available 24/7 • All Devices Supported • Instant Access
               </p>
             </div>
           </div>
@@ -47,10 +48,10 @@ const Contact = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-lg mb-2">Location</h3>
+              <h3 className="font-bold text-lg mb-2">Platform</h3>
               <p className="text-blue-100">
-                123 Main Street<br />
-                Riverside, CA 92501
+                Play on PC, Mobile, Tablet<br />
+                Cross-Platform Sync
               </p>
             </div>
 
@@ -60,10 +61,10 @@ const Contact = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-lg mb-2">Hours</h3>
+              <h3 className="font-bold text-lg mb-2">Availability</h3>
               <p className="text-blue-100">
-                Mon - Sat: 7am - 8pm<br />
-                Sunday: 8am - 6pm
+                24/7 Access<br />
+                Global Servers
               </p>
             </div>
 
@@ -73,10 +74,10 @@ const Contact = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-lg mb-2">Service</h3>
+              <h3 className="font-bold text-lg mb-2">Performance</h3>
               <p className="text-blue-100">
-                Express Wash: 15 min<br />
-                Full Detail: 60 min
+                Instant Play: 0ms<br />
+                HD Graphics: 60fps
               </p>
             </div>
           </div>

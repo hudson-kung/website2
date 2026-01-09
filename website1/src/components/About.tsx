@@ -2,11 +2,11 @@ const features = [
   {
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
-    title: 'Fast Service',
-    description: 'Express wash in just 10-15 minutes. Get back on the road quickly with a sparkling clean car.',
+    title: 'Instant Gaming',
+    description: 'Start playing immediately. No downloads, no waiting. Just click and play your favorite games instantly.',
   },
   {
     icon: (
@@ -15,16 +15,16 @@ const features = [
       </svg>
     ),
     title: 'Quality Guaranteed',
-    description: "Not satisfied? We'll rewash your car for free. Your satisfaction is our top priority.",
+    description: "Not satisfied? Get a full refund within 30 days. Your gaming experience is our top priority.",
   },
   {
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
       </svg>
     ),
-    title: 'Eco-Friendly',
-    description: 'We use biodegradable products and water recycling systems to protect our environment.',
+    title: 'Cross-Platform',
+    description: 'Play on any device. PC, mobile, tablet - your games sync seamlessly across all platforms.',
   },
   {
     icon: (
@@ -32,8 +32,8 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
       </svg>
     ),
-    title: 'Expert Team',
-    description: 'Our trained professionals treat every car with care and attention to detail.',
+    title: 'Expert Support',
+    description: 'Our gaming experts are available 24/7 to help you with any questions or technical issues.',
   },
 ];
 
@@ -44,24 +44,24 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div>
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">About Us</span>
+            <span className="text-purple-600 font-semibold text-sm uppercase tracking-wider">About Us</span>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2 mb-6">
-              The Inland Empire's Trusted Car Wash
+              The Ultimate Gaming Destination
             </h2>
             <p className="text-gray-600 text-lg mb-6">
-              Fresh & Clean Car Wash has been serving the Inland Empire community for over 10 years. 
-              We're passionate about making your car look its absolute best while providing fast, 
-              friendly service you can count on.
+              GameZone has been the premier gaming platform for over 10 years. 
+              We're passionate about delivering the best gaming experiences with instant access,
+              amazing graphics, and a community of millions of players worldwide.
             </p>
             <p className="text-gray-600 text-lg mb-8">
-              Whether you need a quick express wash or a complete detail, our expert team uses 
-              premium products and state-of-the-art equipment to deliver outstanding results every time.
+              Whether you're into action games, creative building, or competitive multiplayer, 
+              our platform offers something for every type of gamer with new games added weekly.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
               {features.map((feature, index) => (
                 <div key={index} className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600">
+                  <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600">
                     {feature.icon}
                   </div>
                   <div>
@@ -80,19 +80,19 @@ const About = () => {
                 <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                <span className="text-lg">Add Team/Shop Image Here</span>
+                <span className="text-lg">Add Gaming Community Image</span>
               </div>
             </div>
             
             {/* Stats Card */}
             <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-6">
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center">
                   <span className="text-2xl font-bold text-white">10+</span>
                 </div>
                 <div>
                   <p className="text-gray-900 font-bold text-lg">Years Experience</p>
-                  <p className="text-gray-500 text-sm">Serving the IE</p>
+                  <p className="text-gray-500 text-sm">In Gaming</p>
                 </div>
               </div>
             </div>
@@ -101,25 +101,25 @@ const About = () => {
 
         {/* Testimonials */}
         <div className="mt-24">
-          <h3 className="text-2xl font-bold text-gray-900 text-center mb-12">What Our Customers Say</h3>
+          <h3 className="text-2xl font-bold text-gray-900 text-center mb-12">What Our Gamers Say</h3>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: 'Maria G.',
-                location: 'Riverside',
-                text: 'Best car wash in the IE! My car has never looked better. The staff is super friendly and fast.',
+                name: 'Alex M.',
+                location: 'Online',
+                text: 'Best gaming platform ever! The instant play feature is amazing and the game selection is incredible.',
                 rating: 5,
               },
               {
-                name: 'James T.',
-                location: 'Corona',
-                text: 'I bring my whole fleet here. Great prices for businesses and the quality is always consistent.',
+                name: 'Sarah K.',
+                location: 'Mobile',
+                text: 'I love playing on my phone during breaks. The cross-platform sync is perfect for my gaming lifestyle.',
                 rating: 5,
               },
               {
-                name: 'Sarah L.',
-                location: 'Moreno Valley',
-                text: "Love the monthly membership! Unlimited washes for one low price. Can't beat it!",
+                name: 'Mike R.',
+                location: 'PC',
+                text: 'The graphics quality and performance are outstanding. Worth every penny for the premium experience!',
                 rating: 5,
               },
             ].map((testimonial, index) => (

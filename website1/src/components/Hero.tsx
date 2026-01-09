@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center gradient-blue pt-16">
+    <section id="home" className="relative min-h-screen flex items-center bg-gradient-to-br from-purple-900 via-purple-800 to-purple-950 pt-16 !important" style={{backgroundColor: 'rgb(88 28 135)'}}>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -8,59 +8,80 @@ const Hero = () => {
         }} />
       </div>
 
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
+      </div>
+
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           {/* Trust Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-8 border border-white/20">
             <span className="flex h-2 w-2 relative">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
             </span>
-            <span className="text-white text-sm font-medium">Open Now • Serving the Inland Empire</span>
+            <span className="text-white text-sm font-medium">Online Now • 24/7 Gaming</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Your Car Deserves to
-            <span className="block text-cyan-300">Shine Like New</span>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-tight tracking-tight">
+            <span className="block">GameZone</span>
+            <span className="block bg-gradient-to-r from-cyan-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">Ultimate Gaming Store</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-2xl mx-auto">
-            Professional car wash services in the Inland Empire. Fast, affordable, and eco-friendly. 
-            Get your car sparkling clean in minutes!
+          <p className="text-xl md:text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed">
+            Premium gaming experiences for every player. From action-packed adventures to creative building games. 
+            Level up your gaming today!
           </p>
 
           {/* Main CTA Button */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
             <a
-              href="tel:1111111111"
-              className="inline-flex items-center justify-center gap-3 bg-cyan-400 hover:bg-cyan-300 text-blue-900 font-bold py-5 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl text-xl"
+              href="#"
+              className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-2xl transition-all duration-500 transform hover:scale-105 shadow-2xl hover:shadow-3xl text-lg"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              <svg className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
               </svg>
-              Call Now: 111-111-1111
+              <span>Start Playing Now</span>
+            </a>
+            <a
+              href="#services"
+              className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 hover:bg-white/20 hover:border-white/50 hover:scale-105 text-lg"
+            >
+              Browse Games
             </a>
           </div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center gap-8 text-white/80">
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+          <div className="flex flex-wrap justify-center gap-12 text-white/90">
+            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-xl">
+              <svg className="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
-              <span className="font-medium">4.9 Rating</span>
+              <div>
+                <span className="font-semibold text-white">4.9 Rating</span>
+                <span className="block text-xs text-white/70">10,000+ Reviews</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-xl">
+              <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <span className="font-medium">10,000+ Cars Washed</span>
+              <div>
+                <span className="font-semibold text-white">50,000+ Players</span>
+                <span className="block text-xs text-white/70">Active Daily</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-xl">
+              <svg className="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <span className="font-medium">15 Min Express Wash</span>
+              <div>
+                <span className="font-semibold text-white">Instant Access</span>
+                <span className="block text-xs text-white/70">No Downloads</span>
+              </div>
             </div>
           </div>
         </div>
