@@ -1,0 +1,18 @@
+{
+  "buildCommand": "cd website1 && npm run build",
+  "outputDirectory": "website1/dist",
+  "installCommand": "cd website1 && npm install",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "functions": {},
+  "headers": {
+    "X-Frame-Options": "DENY",
+    "X-Content-Type-Options": "nosniff"
+  },
+  "cleanUrls": true
+}
