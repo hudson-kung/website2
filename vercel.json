@@ -9,7 +9,6 @@
       "destination": "/index.html"
     }
   ],
-  "functions": {},
   "headers": {
     "X-Frame-Options": "DENY",
     "X-Content-Type-Options": "nosniff"
